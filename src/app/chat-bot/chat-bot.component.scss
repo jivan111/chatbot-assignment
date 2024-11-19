@@ -1,0 +1,99 @@
+h2 {
+    margin: 0;
+}
+
+.chatBox {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    width: 600px;
+    .head {
+        background: #173fe3;
+        padding: 15px;
+        font-size: 12px;
+        color: #fff;
+        border-radius: 10px 10px 0 0;
+        svg{
+            height: 28px;
+            fill: #fff;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+    }
+    .body {
+        height: 480px;
+        padding: 20px;
+        overflow-y: auto;
+        .message{
+            background: #98caf0;
+            color: #696969;
+            font-size: 15px;
+            border-radius: 10px 10px 10px 0px;
+            margin-top: 20px;
+            max-width: 80%;
+            > p{
+                padding: 10px 10px 0 10px;
+                margin: 0 0 10px 0;
+            }
+            > div {
+                padding-bottom: 5px;
+                > div {
+                    background: #fff;
+                    margin: 5px;
+                    padding: 5px;
+                    position: relative;
+                }
+            }
+        }
+        .sm-heading{
+            padding: 10px;
+            display: inline-block;
+            margin: 0;
+        }
+        .item {
+            text-align: center;
+            position: relative;
+            input {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                left: 0;
+                top: -3px;
+                opacity: 0;
+            }
+        }
+        .item.active {
+            color: #000;
+        }
+        .reply{
+            text-align: right;
+            p {
+                text-align: right;
+                font-size: 15px;
+                background: #eaeaea;
+                display: inline-block;
+                padding: 15px;
+                border-radius: 10px 10px 0 10px;
+                margin: 15px 0 0 0;
+            }
+        }
+    }
+    .footer {
+        background: #d5d5d5;
+        padding: 15px;
+    }
+    .footer h3 {
+        margin: 0;
+        font-weight: normal;
+        font-size: 13px;
+    }
+    
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+
+
